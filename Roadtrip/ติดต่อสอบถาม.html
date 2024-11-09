@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+	<style>
+		.tex
+	{
+	color: #FFBE00;
+	font-size: 50px;
+	margin-left: 670px;
+	margin-top: 100px;
+	}
+	 .container {
+            display: flex; /* กำหนดให้เป็น Flexbox container */
+            justify-content: space-between; /* จัดวางภาพให้เรียงกันและเว้นระยะห่าง */
+            width: 900px; /* กำหนดความกว้างของ container ให้พอดีกับ 3 รูป */
+		    margin-left: 500px;
+        }
+        .box {
+            width: 250px; /* กำหนดขนาดของ box */
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .text {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+			font-size: 30px;
+			width: 200px;
+	        margin-bottom: 100px;
+			margin-left: 5%;
+        }
+        .box:hover .image {
+            transform: scale(1.1);
+        }
+        .box:hover .text {
+            opacity: 1;
+        }
+	.container1 {
+            display: flex; /* กำหนดให้เป็น Flexbox container */
+            justify-content: space-between; /* จัดวางภาพให้เรียงกันและเว้นระยะห่าง */
+            width: 900px; /* กำหนดความกว้างของ container ให้พอดีกับ 3 รูป */
+		    margin-left: 500px
+        }
+        .box1 {
+            width: 250px; /* กำหนดขนาดของ box */
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        .image1 {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .text1 {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+			font-size: 30px;
+			width: 200px;
+	        margin-bottom: 100px;
+			margin-left: 5%;
+        }
+        .box1:hover .image1 {
+            transform: scale(1.1);
+        }
+        .box1:hover .text1 {
+            opacity: 1;
+        }
+	.container2 {
+            display: flex; /* กำหนดให้เป็น Flexbox container */
+            justify-content: space-between; /* จัดวางภาพให้เรียงกันและเว้นระยะห่าง */
+            width: 900px; /* กำหนดความกว้างของ container ให้พอดีกับ 3 รูป */
+		    margin-left: 500px;
+        }
+        .box2 {
+            width: 250px; /* กำหนดขนาดของ box */
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+			border: 2px;
+        }
+        .image2 {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .text2 {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+			font-size: 30px;
+			width: 200px;
+	        margin-bottom: 100px;
+			margin-left: 5%;
+        }
+        .box2:hover .image2 {
+            transform: scale(1.1);
+        }
+        .box2:hover .text2 {
+            opacity: 1;
+        }
+	footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.conft {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-12 {
+  flex: 1 0 100%;
+  padding: 0 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+margin-right: 0;
+	margin-left: -15%;
+}
+
+.footer-item {
+  width: 33.33%;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  padding: 5px 0;
+  transform: translate(50%,50%);
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: #868686;
+}
+.footer-item
+	  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+	  .footer-title
+	  {
+	  transform: translate(50%,50%);
+	  font-size: 30px;
+	  }
+	  .footer-nh
+	  {
+	  transform: translate(20%,7%);
+	  }
+		-------------------
+.button7{
+        background: #FFB000;
+        padding: 30px 290px;
+        border-radius: 60px;
+        margin-top: 20px;
+        font-size: 25px;
+        text-decoration: none; /* ลบเส้นใต้ข้อความ */
+        color: #FFFFFF
+		}
+		.con4 { 
+			margin-top: -200px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            display: flex;
+      flex-direction: column;
+      align-items: center;
+        }
+	 .con5 { 
+			margin-top: 00px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            display: flex;
+      flex-direction: column;
+      align-items: center;
+        }
+		.button8{
+        background: #FFB000;
+        padding: 30px 290px;
+        border-radius: 60px;
+        margin-top: 20px;
+        font-size: 25px;
+        text-decoration: none; /* ลบเส้นใต้ข้อความ */
+        color: #FFFFFF
+		}
+	button {
+    background-color: #f8d210;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+		 .contact-tab {
+            background-color:#4490A0;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+		}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  padding: 20px;
+  margin-left: 650px;
+}
+.contact-header {
+  
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+	width: 100%;}
+
+ .contact-item img {
+        width: 40px; /* ปรับขนาดตามที่คุณต้องการ */
+        height: 40px; /* ปรับขนาดตามที่คุณต้องการ */
+	    margin-right:-30px;
+    }
+
+h1 {
+  color: #000;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid 	#FFFFFF;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.contact-item:hover {
+  background-color: #FBFBFB;
+}
+
+.icon-location, .icon-email, .icon-phone, .icon-facebook, .icon-twitter, .icon-instagram, .icon-tiktok {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  fill: #000;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+ .movie-tagline2 {
+            position: absolute;
+            bottom: -29px; /* ปรับระยะห่างจากด้านล่างของรูปภาพ */
+            left: 470px; /* ปรับให้เว้นจากขอบซ้ายประมาณ 20px */
+            color: white;
+            font-size: 30px;
+	        background-color:#4490A0;
+	        padding: 3px 30px;
+	        width: calc(50%); /* ปรับความกว้างทั้งหมดของแบล็คกราว */
+	         box-sizing: border-box;
+             text-align: left;
+ }
+	 
+	</style>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link  rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Road trip</title>
+</head>
+<body>
+    <div style="position: relative;"></div>
+    <section>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="index.html">
+                <img src="โลโก้โรดทริป.png">
+            </a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="index.html"></a></span>
+                    <i class='bx bx- siderbarClose'></i>
+                </div>
+
+               <ul class="nav-links">
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li class="dropdown">
+    <a class="dropbtn">ประเภทหนัง<i class='bx bx-caret-down'></i></a>
+    <div class="dropdown-content">
+        <a href="หนังไทย.html">หนังไทย</a>
+		<a href="หนังต่างประเทศ.html">หนังต่างประเทศ</a>
+		 <a href="แอนิเมชั่น.html">แอนิเมชั่น</a></li>
+                    <li><a href="ติดต่อสอบถาม.html">ติดต่อ</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+                   <div class="search-field">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">
+                    <i class='bx bx-search'></i>
+                    <div>
+                    <ul id="myUL">
+                       <li><a href="Friend Zone.html">Friend Zone</a></li>
+                       <li><a href="I Fine Thank You Love You ไอฟาย แต๊งกิ้ว เลิฟยู้.html">I Fine Thank You Love You</a></li>
+                       <li><a href="I Jealousy Incarnate.html">I Jealousy</a></li>
+                       <li><a href="King the land.html">King the land</a></li>
+                       <li><a href="Low Season.html">Low Season</a></li>
+                       <li><a href="moonshine and valentine.html">Moonshine</a></li>
+                       <li><a href="บุยเพสันนิวาส.html">บุพเพสันนิวาศ</a></li>
+                       <li><a href="#">ฤดูฝันฉันมีเธอ</a></li>
+                       <li><a href="#">lalaland</a></li>
+                       <li><a href="#">Mulan</a></li>
+                       <li><a href="The K2.html">The K2</a></li>
+                       <li><a href="#">The Dangers in my Heart</a></li>
+                       <li><a href="Suzume no Tojimari.html">Susume ni toji</a></li>
+                       <li><a href="#">ผลึกเทพบัลลังก์ราชันย์</a></li>
+                       <li><a href="#">Jealousy Incarnate</a></li>
+                       <li><a href="#">My Mister</a></li>
+                     </ul>
+                    </div>
+                     <script>
+                       function myFunction() {
+                           var input, filter, ul, li, a, i;
+                           input = document.getElementById("myInput");
+                           filter = input.value.toUpperCase();
+                           if(filter==''){
+                              resetList();
+                           }else{
+                           ul = document.getElementById("myUL");
+                           li = ul.getElementsByTagName("li");
+                           for (i = 0; i < li.length; i++) {
+                               if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                   li[i].style.display = "";
+                               } else {
+                                   li[i].style.display = "none";
+                               }
+                           }
+                           }
+                       }
+                       
+                       function resetList(){
+                           var input, filter, ul, li, a, i;
+
+                           input = document.getElementById("myInput");
+                           filter = input.value.toUpperCase();
+                           ul = document.getElementById("myUL");
+                           li = ul.getElementsByTagName("li");
+                           for (i = 0; i < li.length; i++) {
+                               li[i].style.display = "none";
+                           }
+                       }
+                       
+                       resetList();
+                       </script>
+                   </div>
+            </div>
+       </div>
+   </div>
+</nav>
+</section>
+	</head>
+	<body>
+	<br><h1 class="tex">ช่องทางการติดต่อ</h1>
+	<div class="container">
+   
+
+    <ul>
+       <li class="contact-item">
+		  <img src="img/โลโก้ติดต่อเรา/3.jpg" alt="phone">
+        <span class="icon-phone"></span>
+        <span class="contact-info">
+          เบอร์โทร: 02-549-3243
+        </span>
+		<li class="contact-item">
+		  <img src="img/โลโก้ติดต่อเรา/2.jpg" alt="email">
+        <span class="icon-email"></span>
+        <span class="contact-info">
+          อีเมล: longtirp@gmail.com
+        </span>
+      </li>
+  
+		<li class="contact-item">
+		<img src="img/โลโก้ติดต่อเรา/1.jpg" alt="location">
+        <span class="icon-location"></span>
+        <span class="contact-info">
+       สถานที่<a href="https://bus.rmutt.ac.th/">:มหาวิทยาลัยเทคโนโลยีราชมงคลรัชญบุรี คณะบริหาร ตึก 4 </a>
+		</span>
+      </li>
+     
+		<li class="contact-item">
+		  <img src="img/โลโก้ติดต่อเรา/4.jpg" alt="facebook">
+        <span class="icon-facebook"></span>
+        <span class="contact-info">
+          Facebook<a href="https://web.facebook.com/profile.php?id=61557453567159&is_tour_dismissed=true">:@Long Tirp</a>
+        </span>
+      </li>
+      <li class="contact-item">
+		  <img src="img/โลโก้ติดต่อเรา/7.jpg" alt="X">
+        <span class="icon-twitter"></span>
+        <span class="contact-info">
+          Twitter:<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2Flong_trip_withu%3Ft%3DlGlSnarr_Ts6GYY6UHP8Uw%26s%3D09%26fbclid%3DIwAR3TZvvG525Y0pocgexLFzJFQuhLRNyR70fhQGrrL6_1a4UkkcAANq-4-jA&h=AT0-ofXgQCylO1EbGJP_alCBE7knu_garMPmv3uAiBdtFHCuOy_AXx35u_pR9QMIKua4_90o1gUTjWM14jqsxeY0GOicks27FMzVhf3KzjGRe-Inj3i3e4kpWe9OchBXmA5BpJcZhc2NhEy5W2z9_Q">@Long_Tirp            </a>     
+        </span>
+      </li>
+      <li class="contact-item">
+		  <img src="img/โลโก้ติดต่อเรา/5.jpg" alt=instagram>
+        <span class="icon-instagram"></span>
+        <span class="contact-info">
+          Instagram: <a href="https://www.instagram.com/long_trip_withus/?igsh=aTNraTBlbjNhazc5&fbclid=IwAR1_uXtyi7bduXls6iH0n9BpcWk0EG_QUEn0To2a1jW-ERKPuxPz5MW-Ek8">@_LongTirp </a>
+        </span>
+      </li>
+   
+      </li>
+  
+    </ul>
+  </div>
+	<br><br><<footer>
+    <div class="conft">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-content">
+            <div class="footer-item">
+              <h3 class="footer-title">เกี่ยวกับ</h3>
+                <p class="footer-nh">แนะนำสถานที่ท่องเที่ยวสำหรับคนที่อยากตามรอยหนังหรือเอนิเมชั่นที่คุณรัก โดยเป็นการท่องเที่ยวระยะยาวดังนั้นจึงควรเตรียมตัวให้พร้อม ก่อนออกเดินทางหากพร้อมแล้ว มารองทริปไปกับพวกเรา Long trip with us</p>
+            </div>
+            <div class="footer-item">
+              <p class="footer-title">แนะนำหนังไทย</p>
+              <ul class="footer-links">
+                <li><a href="Friend Zone.html">Friend Zone</a></li>
+                <li><a href="สิ่งเล็กๆที่เรียกว่ารัก.html"> สิ่งเล็กๆที่เรียกรัก</a></li>
+                <li><a href="Low Season.html">สุขสันต์วันโสด</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+                <p class="footer-title">แนะนำหนังต่างชาติ</p>
+                <ul class="footer-links">
+                  <li><a href="#">lalaland</a></li>
+                  <li><a href="moonshine and valentine.html"> Moonshine</a></li>
+                  <li><a href="The K2.html">The K2</a></li>
+                </ul>
+              </div>
+              <div class="footer-item">
+                <p class="footer-title">แนะนำเอนิเมชั่น</p>
+                <ul class="footer-links">
+                  <li><a href="Suzume no Tojimari.html">Susume no Toji</a></li>
+                  <li><a href="Slamdunk.html">Slam Dunk</a></li>
+                  <li><a href="Mulan.html">Mulan</a></li>
+                </ul>
+              </div>
+            <div class="footer-item">
+              <p class="footer-title">เรื่องราวของเรา</p>
+              <ul class="footer-links">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="ติดต่อสอบถาม.html">ติดต่อ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+	<script>const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+
+
+</script>
+</html>
